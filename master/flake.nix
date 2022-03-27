@@ -11,6 +11,7 @@
   inputs.src-finalseg-master.ref   = "refs/heads/master";
   inputs.src-finalseg-master.owner = "bung87";
   inputs.src-finalseg-master.repo  = "finalseg";
+  inputs.src-finalseg-master.dir   = "";
   inputs.src-finalseg-master.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
