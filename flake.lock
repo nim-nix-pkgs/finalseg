@@ -1,5 +1,33 @@
 {
   "nodes": {
+    "finalseg-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "regex": "regex",
+        "src-finalseg-master": "src-finalseg-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1653703611,
+        "narHash": "sha256-Eygm8T7V9vTup/tWiYoTU5LYTlJK/VgHp5DRhW8oUC0=",
+        "owner": "nim-nix-pkgs",
+        "repo": "finalseg",
+        "rev": "63b4b6310bba35cefa8a0ff47a1b7d7933a63158",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "finalseg",
+        "type": "github"
+      }
+    },
     "flakeNimbleLib": {
       "inputs": {
         "nixpkgs": [
@@ -36,9 +64,11 @@
     "regex": {
       "inputs": {
         "flakeNimbleLib": [
+          "finalseg-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "finalseg-master",
           "nixpkgs"
         ],
         "src-regex-v0_19_0": "src-regex-v0_19_0",
@@ -46,11 +76,11 @@
       },
       "locked": {
         "dir": "v0_19_0",
-        "lastModified": 1656302513,
-        "narHash": "sha256-WnXkrCABmJAoPuLRaoBFHF64y9B5Ld9+gBHXxny83IY=",
+        "lastModified": 1653703543,
+        "narHash": "sha256-YJDAN/ECpLb0s88ZLIpPSYkqMOj0q8WU0I/jLQgtO6g=",
         "owner": "nim-nix-pkgs",
         "repo": "regex",
-        "rev": "4bf78482dc0fb932b1b97a0c117babad35253878",
+        "rev": "914638b6fc8575b0e72e6cb7cd5be1d2e6615b0e",
         "type": "github"
       },
       "original": {
@@ -63,10 +93,9 @@
     },
     "root": {
       "inputs": {
+        "finalseg-master": "finalseg-master",
         "flakeNimbleLib": "flakeNimbleLib",
-        "nixpkgs": "nixpkgs",
-        "regex": "regex",
-        "src-finalseg-master": "src-finalseg-master"
+        "nixpkgs": "nixpkgs"
       }
     },
     "src-finalseg-master": {
@@ -123,10 +152,12 @@
     "unicodedb": {
       "inputs": {
         "flakeNimbleLib": [
+          "finalseg-master",
           "regex",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "finalseg-master",
           "regex",
           "nixpkgs"
         ],
